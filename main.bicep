@@ -19,7 +19,7 @@ param doNotVerifyRemoteGateways bool = false
 @description('Resource id of the remote virtual network to peer with')
 param remoteVirtualNetworkId string
 
-@description('Resource id of the remote virtual network to peer with')
+@description('If remote gateways can be used on this virtual network')
 param useRemoteGateways bool
 
 resource peering 'Microsoft.Network/virtualNetworks/virtualNetworkPeerings@2021-02-01' = {
